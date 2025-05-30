@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Περιβαλλοντικές μεταβλητές
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Εικόνες ή προσωρινά αρχεία
+*.log
+*.tmp
+
+# Mac
+.DS_Store
+
+# Android / iOS build (αν υπάρχει)
+android/
+ios/
+
+# Expo
+.expo/
+.expo-shared/
+
+# React Native
+*.keystore
