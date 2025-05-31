@@ -1,5 +1,3 @@
-// middleware/authMiddleware.js
-
 const jwt = require('jsonwebtoken');
 
 const verifyToken = (req, res, next) => {
@@ -14,7 +12,7 @@ const verifyToken = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = decoded; // Αποθηκεύουμε το decoded token στο request
+    req.user = decoded;
     next();
   } catch (err) {
     console.error('Invalid token:', err);

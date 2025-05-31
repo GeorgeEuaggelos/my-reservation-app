@@ -1,5 +1,3 @@
-// config/db.js
-
 const mysql = require('mysql2');
 const dotenv = require('dotenv');
 
@@ -16,4 +14,4 @@ const pool = mysql.createPool({
   queueLimit: 0
 });
 
-module.exports = pool.promise(); // χρήση promise-based API
+module.exports = pool.promise();

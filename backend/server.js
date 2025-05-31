@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // για να καταλαβαίνει JSON payloads
+app.use(express.json());
 
 // Routes
 const authRoutes = require('./routes/authRoutes');
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send('Server is running 🚀');
 });
 
-// Ξεκινάμε τον server — ΜΕΤΑ την προσθήκη των routes
+// Ξεκινάμε τον server
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
 });

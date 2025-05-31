@@ -1,5 +1,3 @@
-// test-db.js
-
 const db = require('./config/db');
 
 async function testConnection() {
